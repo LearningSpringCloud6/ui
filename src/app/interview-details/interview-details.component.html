@@ -1,0 +1,27 @@
+<h1>{{title}}</h1>
+<form #interviewDetailsForm="ngForm" (ngSubmit)="submitInterviewDetails(interviewDetailsForm.value)">
+  Interviewer Email: <input type="interviewerEmail" required #name="ngModel" pattern="[a-zA-Z]+$" name="interviewer-name" placeholder="Enter Interviewer Email" ngModel />
+  <br /> 
+  Candidate Email: <input type="candidateEmail" required #name="ngModel" pattern="[a-zA-Z]+$" name="candidate-name" placeholder="Enter Candidate Email" ngModel />
+  <br /> 
+  Organizer Email: <input type="organizerEmail" required #name="ngModel" pattern="[a-zA-Z]+$" name="organizer-email"
+   placeholder="Enter Organizer Email" ngModel />
+  <br /> 
+  Feedback:<input type="feedback" required #name="ngModel" pattern="[a-zA-Z]+$" name="organizer-name"
+  placeholder="Enter Feedback" ngModel />
+  <br />
+  Round Number: <input type="feedback" required #name="ngModel" pattern="[a-zA-Z]+$" name="round-number"
+  placeholder="Enter Round number" ngModel />
+  <br />
+
+  Candidate Employee Id:<input type="feedback" required #name="ngModel" pattern="[a-zA-Z]+$" name="candidate-emp-id"
+  placeholder="Enter Feedback" ngModel />
+  <br />
+ 
+  <!-- <input type="password" name="password" minlength="2" required #password="ngModel" placeholder="Enter Password" ngModel />
+  <br />
+  <span *ngIf="password.invalid && password.touched" style="color: red;" >Please enter a Valid input</span><br />
+  <br />  -->
+  <!-- [disabled]="interviewDetailsForm.invalid" -->
+  <button>Submit</button>
+</form>

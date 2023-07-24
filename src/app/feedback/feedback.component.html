@@ -1,0 +1,33 @@
+<h1>SUBMIT YOUR FEEDBACK</h1>
+<form #FeedbackForm="ngForm" (ngSubmit)="saveFeedback(FeedbackForm.value)">
+  PANELNAME: <input type="interviewerEmail" required #name="ngModel" pattern="[a-zA-Z]+$" name="interviewer-name" placeholder="Enter Interviewer Email" ngModel />
+  <br /> 
+  CANDIDATE NAME: <input type="candidateEmail" required #name="ngModel" pattern="[a-zA-Z]+$" name="candidate-name" placeholder="Enter Candidate Email" ngModel />
+  <br /> 
+  CANDIDATE EMAIL: <input type="organizerEmail" required #name="ngModel" pattern="[a-zA-Z]+$" name="organizer-email"
+   placeholder="Enter Organizer Email" ngModel />
+  <br /> 
+  EXPERIENCE:<input type="feedback" required #name="ngModel" pattern="[a-zA-Z]+$" name="organizer-name"
+  placeholder="Enter Feedback" ngModel />
+  <br />
+  SKILLS: <input type="feedback" required #name="ngModel" pattern="[a-zA-Z]+$" name="round-number"
+  placeholder="Enter Round number" ngModel />
+  <br />
+
+  FEEDBACK NOTES:<input type="feedback" required #name="ngModel" pattern="[a-zA-Z]+$" name="candidate-emp-id"
+  placeholder="Enter Feedback" ngModel />
+  <br />
+  FINAL VERDICT:<input type="feedback" required #name="ngModel" pattern="[a-zA-Z]+$" name="candidate-emp-id"
+  placeholder="Enter Feedback" ngModel />
+  <br />
+  HR NAME:<input type="feedback" required #name="ngModel" pattern="[a-zA-Z]+$" name="candidate-emp-id"
+  placeholder="Enter Feedback" ngModel />
+  <br />
+  CODE SNIPPETS:<input type="feedback" required #name="ngModel" pattern="[a-zA-Z]+$" name="candidate-emp-id"
+  placeholder="Enter Feedback" ngModel />
+  <br />
+  SCREENSHOTS:<input type="feedback" required #name="ngModel" pattern="[a-zA-Z]+$" name="candidate-emp-id"
+  placeholder="Enter Feedback" ngModel />
+  <br />
+  <button>Submit</button>
+</form>
